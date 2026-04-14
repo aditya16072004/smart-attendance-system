@@ -1,0 +1,66 @@
+body{
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(120deg,#1f4037,#99f2c8);
+}
+/* Navbar */
+.navbar{
+background:#111;
+color:white;
+padding:15px;
+font-size:22px;
+text-align:center;
+letter-spacing:2px;
+}
+/* Dashboard cards */
+.container{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:80px;
+}
+.card{
+width:250px;
+height:180px;
+background:white;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+text-align:center;
+padding:25px;
+transition:0.3s;
+}
+.card:hover{
+transform:scale(1.07);
+}
+.card h2{
+margin-top:10px;
+}
+.btn{
+margin-top:20px;
+padding:10px 20px;
+border:none;
+border-radius:8px;
+background:#1f4037;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+.btn:hover{
+background:#145a50;
+}
+/* Forms */
+.form-box{
+width:350px;
+margin:80px auto;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+}

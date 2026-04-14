@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<div class="navbar">Smart Attendance System</div>
+<div class="container">
+<div class="card">
+<h2>Register Student</h2>
+<a href="/register"><button class="btn">Open</button></a>
+</div>
+<div class="card">
+<h2>Mark Attendance</h2>
+<a href="/mark_attendance"><button class="btn">Start</button></a>
+</div>
+<div class="card">
+<h2>View Report</h2>
+<a href="/report"><button class="btn">View</button></a>
+</div>	
+<div class="card">
+<h2>Logout</h2>
+<a href="/logout"><button class="btn">Logout</button></a>
+</div>
+<div class="camera-section">
+<h2>Live Attendance Camera</h2>
+<img src="{{ url_for('video_feed') }}" width="600">
+</div>
+</div>

@@ -1,0 +1,10 @@
+Flask
+flask-mysqldb
+opencv-python-headless
+numpy
+pandas
+flask-mail
+twilio
+python-dotenv
+gunicorn
+schedule

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Attendance Report</title>
+<style>
+body{
+font-family: Arial;
+background:#f4f6f9;
+padding:40px;
+}
+h1{
+text-align:center;
+color:#333;
+}
+table{
+border-collapse:collapse;
+width:80%;
+margin:auto;
+background:white;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+th, td{
+padding:12px;
+text-align:center;
+}
+th{
+background:#007bff;
+color:white;
+}
+tr:nth-child(even){
+background:#f2f2f2;
+}
+.btn{
+display:block;
+width:200px;
+margin:20px auto;
+padding:12px;
+background:green;
+color:white;
+text-align:center;
+text-decoration:none;
+border-radius:5px;
+}
+</style>
+</head>
+<body>
+<h1>Attendance Report</h1>
+<a class="btn" href="/download_excel">⬇ Download Excel Report</a>
+<table border="1">
+<tr>
+<th>Student Name</th>
+<th>Date</th>
+<th>Time</th>
+<th>Status</th>
+</tr>
+{% for row in records %}
+<tr>
+<td>{{ row[0] }}</td>
+<td>{{ row[1] }}</td>
+<td>{{ row[2] }}</td>
+<td>{{ row[3] }}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>
