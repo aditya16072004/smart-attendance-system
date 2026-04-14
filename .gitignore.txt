@@ -1,0 +1,4 @@
+.env
+__pycache__/
+*.pyc
+attendance_report.xlsx
